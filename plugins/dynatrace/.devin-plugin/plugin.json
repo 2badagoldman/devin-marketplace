@@ -1,7 +1,7 @@
 {
   "name": "dynatrace",
   "displayName": "Dynatrace",
-  "description": "Query logs, metrics, and events with DQL, investigate problems, and review vulnerabilities via the Dynatrace remote MCP server. Enter your environment ID (abc12345 in abc12345.apps.dynatrace.com); change the domain only if your environment is not on apps.dynatrace.com, e.g. live.dynatrace.com.",
+  "description": "Query logs, metrics, and events with DQL, investigate problems, and review vulnerabilities via the Dynatrace remote MCP server. Enter the host of your Dynatrace environment as shown in your browser, e.g. abc12345.apps.dynatrace.com or abc12345.live.dynatrace.com.",
   "homepage": "https://www.dynatrace.com/",
   "logo": "logo.svg",
   "keywords": [
@@ -10,7 +10,7 @@
   ],
   "mcpServers": {
     "dynatrace": {
-      "url": "https://${DYNATRACE_ENVIRONMENT_ID}.${DYNATRACE_DOMAIN:-apps.dynatrace.com}/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
+      "url": "https://${DYNATRACE_ENVIRONMENT_HOST}/platform-reserved/mcp-gateway/v0.1/servers/dynatrace-mcp/mcp",
       "headers": {
         "Authorization": "Bearer ${DYNATRACE_PLATFORM_TOKEN}",
         "Dt-External-Source": "dynatrace-for-ai/8.0.1"
