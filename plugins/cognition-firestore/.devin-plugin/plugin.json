@@ -2,6 +2,7 @@
   "name": "cognition-firestore",
   "displayName": "Firestore",
   "description": "Firestore integration for document database operations",
+  "shortDescription": "Document database operations",
   "homepage": "https://github.com/googleapis/genai-toolbox",
   "logo": "logo.svg",
   "keywords": [

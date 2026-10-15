@@ -2,6 +2,7 @@
   "name": "mongodb",
   "displayName": "MongoDB",
   "description": "MongoDB integration for document database operations and Atlas management",
+  "shortDescription": "Document database operations and atlas",
   "homepage": "https://www.mongodb.com",
   "repository": "https://github.com/mongodb-js/mongodb-mcp-server",
   "logo": "logo.svg",

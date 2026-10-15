@@ -2,6 +2,7 @@
   "name": "resend",
   "displayName": "Resend",
   "description": "Resend's hosted MCP server: send emails, manage domains, API keys, audiences, contacts and broadcasts, and inspect delivery events.",
+  "shortDescription": "Send emails manage domains API keys",
   "homepage": "https://resend.com",
   "repository": "https://github.com/resend/resend-skills",
   "logo": "logo.svg",

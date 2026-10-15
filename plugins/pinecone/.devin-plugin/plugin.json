@@ -2,6 +2,7 @@
   "name": "pinecone",
   "displayName": "Pinecone",
   "description": "Pinecone vector database integration for semantic search and AI applications",
+  "shortDescription": "Vector database semantic search and AI",
   "homepage": "https://www.pinecone.io",
   "logo": "logo.svg",
   "keywords": [

@@ -2,6 +2,7 @@
   "name": "intercom",
   "displayName": "Intercom",
   "description": "Intercom integration for customer support and messaging",
+  "shortDescription": "Manage customer conversations",
   "homepage": "https://www.intercom.com",
   "logo": "logo.svg",
   "keywords": [

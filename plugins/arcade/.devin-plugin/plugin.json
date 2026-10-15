@@ -2,6 +2,7 @@
   "name": "arcade",
   "displayName": "Arcade",
   "description": "Arcade AI platform integration for building and deploying AI-powered tools and workflows",
+  "shortDescription": "AI platform building and deploying",
   "homepage": "https://arcade.dev",
   "logo": "logo.jpg",
   "keywords": [

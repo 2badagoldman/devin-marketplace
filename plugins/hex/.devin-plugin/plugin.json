@@ -2,6 +2,7 @@
   "name": "hex",
   "displayName": "Hex",
   "description": "Hex integration to answer questions about your data with the Hex agent",
+  "shortDescription": "Answer questions about data agent",
   "homepage": "https://hex.tech",
   "logo": "logo.png",
   "keywords": [

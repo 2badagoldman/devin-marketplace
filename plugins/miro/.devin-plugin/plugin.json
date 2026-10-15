@@ -2,6 +2,7 @@
   "name": "miro",
   "displayName": "Miro",
   "description": "Miro integration to build boards, visualize ideas, and act on feedback",
+  "shortDescription": "Build boards visualize ideas and act",
   "homepage": "https://miro.com",
   "logo": "logo.svg",
   "keywords": [

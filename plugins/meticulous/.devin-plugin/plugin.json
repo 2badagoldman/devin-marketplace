@@ -2,6 +2,7 @@
   "name": "meticulous",
   "displayName": "Meticulous",
   "description": "Meticulous integration to inspect test runs, replay diffs, and coverage for frontend changes",
+  "shortDescription": "Review test runs and visual diffs",
   "homepage": "https://meticulous.ai",
   "logo": "logo.png",
   "keywords": [

@@ -2,6 +2,7 @@
   "name": "wolfram",
   "displayName": "Wolfram",
   "description": "Wolfram integration to inject precise, real-time computation and knowledge",
+  "shortDescription": "Precise real-time computation",
   "homepage": "https://www.wolfram.com",
   "logo": "logo.svg",
   "keywords": [

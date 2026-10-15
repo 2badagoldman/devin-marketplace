@@ -2,6 +2,7 @@
   "name": "cognition-mysql",
   "displayName": "MySQL",
   "description": "MySQL integration for data management and SQL operations",
+  "shortDescription": "Run MySQL queries",
   "homepage": "https://github.com/googleapis/genai-toolbox",
   "logo": "logo.svg",
   "keywords": [

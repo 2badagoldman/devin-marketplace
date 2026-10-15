@@ -2,6 +2,7 @@
   "name": "clerk",
   "displayName": "Clerk",
   "description": "Clerk integration to add authentication, organizations, and billing",
+  "shortDescription": "User authentication and organizations",
   "homepage": "https://clerk.com",
   "logo": "logo.svg",
   "keywords": [

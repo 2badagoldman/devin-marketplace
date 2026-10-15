@@ -2,6 +2,7 @@
   "name": "cognition-bigquery",
   "displayName": "BigQuery",
   "description": "BigQuery integration for analytics queries and dataset management",
+  "shortDescription": "Analytics queries and dataset management",
   "homepage": "https://github.com/googleapis/genai-toolbox",
   "logo": "logo.svg",
   "keywords": [

@@ -2,6 +2,7 @@
   "name": "synthflow-docs",
   "displayName": "Synthflow Docs",
   "description": "Synthflow's hosted documentation MCP server: search the Synthflow AI voice-agent platform docs.",
+  "shortDescription": "Search AI voice-agent platform",
   "homepage": "https://synthflow.ai",
   "logo": "logo.png",
   "keywords": [

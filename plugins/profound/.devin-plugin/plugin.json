@@ -2,6 +2,7 @@
   "name": "profound",
   "displayName": "Profound",
   "description": "Profound's hosted MCP server: track your brand's AI visibility, sentiment and citations across AI answer engines.",
+  "shortDescription": "Track brand s AI visibility sentiment",
   "homepage": "https://www.tryprofound.com",
   "logo": "logo.png",
   "keywords": [
