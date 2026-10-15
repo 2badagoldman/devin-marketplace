@@ -1,7 +1,7 @@
 {
   "name": "honeycomb",
   "displayName": "Honeycomb",
-  "description": "Honeycomb integration to query and explore observability data and SLOs",
+  "description": "Honeycomb integration to query and explore observability data and SLOs. Teams in Honeycomb's EU region should set the server domain to mcp.eu1.honeycomb.io.",
   "homepage": "https://www.honeycomb.io",
   "logo": "logo.png",
   "keywords": [
@@ -9,7 +9,7 @@
   ],
   "mcpServers": {
     "honeycomb": {
-      "url": "https://mcp.honeycomb.io/mcp"
+      "url": "https://${HONEYCOMB_MCP_DOMAIN:-mcp.honeycomb.io}/mcp"
     }
   }
 }
