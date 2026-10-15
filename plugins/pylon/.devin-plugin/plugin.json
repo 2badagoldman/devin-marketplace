@@ -2,7 +2,7 @@
   "name": "pylon",
   "displayName": "Pylon",
   "description": "Pylon customer support integration for searching, reading, and updating issues, accounts, and contacts through natural language",
-  "shortDescription": "Customer searching reading and updating",
+  "shortDescription": "Support issues, accounts and contacts",
   "homepage": "https://usepylon.com",
   "logo": "logo.svg",
   "keywords": [

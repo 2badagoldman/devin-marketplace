@@ -2,7 +2,7 @@
   "name": "todoist",
   "displayName": "Todoist",
   "description": "Todoist's hosted MCP server: create, find, update and complete tasks and projects in your Todoist workspace.",
-  "shortDescription": "Create find update and complete tasks",
+  "shortDescription": "Tasks, projects and due dates",
   "homepage": "https://todoist.com",
   "logo": "logo.svg",
   "keywords": [

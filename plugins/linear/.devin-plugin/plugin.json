@@ -2,7 +2,7 @@
   "name": "linear",
   "displayName": "Linear",
   "description": "List, create, update, and query Linear objects—issues, projects, initiatives, cycles, comments, and more",
-  "shortDescription": "Issue tracking and project planning",
+  "shortDescription": "Track issues and plan projects",
   "homepage": "https://linear.app",
   "logo": "logo.svg",
   "keywords": [

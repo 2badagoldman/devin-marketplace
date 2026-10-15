@@ -2,7 +2,7 @@
   "name": "perplexity",
   "displayName": "Perplexity",
   "description": "Perplexity integration for web search, deep research, and reasoning over live sources",
-  "shortDescription": "Web search deep research and reasoning",
+  "shortDescription": "Web search and cited research",
   "homepage": "https://www.perplexity.ai",
   "logo": "logo.svg",
   "keywords": [
