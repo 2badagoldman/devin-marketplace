@@ -196,6 +196,8 @@ def check_local_plugin(slug: str, errors: list[str]) -> None:
         return
     for name, config in servers.items():
         check_server(where, name, config, errors)
+    if not servers and not list((PLUGINS / slug / "skills").glob("*/SKILL.md")):
+        errors.append(f"{where}: a plugin needs mcpServers or at least one skills/*/SKILL.md")
 
 
 def canonical(data: dict) -> str:

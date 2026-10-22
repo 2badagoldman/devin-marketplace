@@ -45,7 +45,8 @@ this and CI runs it.
 ## Testing your plugin
 
 `validate.py` only checks the manifest's shape; before opening a PR, install
-the plugin from your checkout and have a session call one of its tools.
+the plugin from your checkout and have a session call one of its tools (or
+use one of its skills).
 
 * Locally: `devin plugins install --local ./plugins/<slug>`. The directory is
   used in place, so edits apply on the next session. Export any `${<NAME>}`
