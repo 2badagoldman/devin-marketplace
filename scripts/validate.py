@@ -45,7 +45,7 @@ STDIO_KEYS = {"command", "args", "env"}
 HTTP_KEYS = {"url", "headers", "transport", "oauthClientId", "oauthScopes"}
 # Other manifest/MCP locations the plugin loader would also read; authored
 # plugins declare everything in .devin-plugin/plugin.json so this validator sees it.
-SHADOW_FILES = (".claude-plugin", "plugin.json", ".mcp.json", "mcp.json")
+SHADOW_FILES = ("plugin.json", ".mcp.json", "mcp.json")
 
 
 def identity(plugin: object) -> tuple[str, str]:

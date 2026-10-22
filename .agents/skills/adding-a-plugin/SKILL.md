@@ -22,7 +22,7 @@ this and CI runs it.
    * `mcpServers` declares the plugin's servers (usually one, keyed by the
      slug): `command` + `args` + `env` for stdio, or `url` (+ `headers`) for
      HTTP. A plugin that only ships `skills/` omits it. Servers live only
-     here: no `.mcp.json`, `mcp.json`, root `plugin.json` or `.claude-plugin/`.
+     here: no `.mcp.json`, `mcp.json` or root `plugin.json`.
    * Never check in a credential. Anything a user supplies is a plain
      `${<NAME>}` placeholder, resolved from the credentials saved on the
      user's installation (no `MCP_` prefix). A stdio `env` value must
