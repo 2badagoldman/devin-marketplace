@@ -57,7 +57,7 @@ use one of its skills).
   (installs the fork's default branch); or a session on your branch where you
   ask Devin to install your plugin as a personal plugin (it uploads the
   directory, you approve). Then start a new session and have Devin call a
-  tool: an MCP that needs OAuth prompts you to authorize it in chat; one that
+  tool or use a skill: an MCP that needs OAuth prompts you to authorize it in chat; one that
   needs a `${<NAME>}` credential has to be connected first from the plugin's
   Connect button in Customize.
 
