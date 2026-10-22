@@ -43,6 +43,7 @@ PLUGIN_KEYS = {
 }
 STDIO_KEYS = {"command", "args", "env"}
 HTTP_KEYS = {"url", "headers", "transport", "oauthClientId", "oauthScopes"}
+INVALID = object()
 
 
 def identity(plugin: object) -> tuple[str, str]:
@@ -163,18 +164,18 @@ def check_logo(where: str, slug: str, logo: object, errors: list[str]) -> None:
         errors.append(f"{where}: logo '{logo}' does not exist in the plugin directory")
 
 
-def read_json(where: str, root: Path, rel: str, errors: list[str]) -> object:
+def load_json(where: str, root: Path, rel: str, errors: list[str]) -> object:
     try:
         return json.loads((root / rel).read_text())
     except ValueError as e:
         errors.append(f"{where}: {rel} is not valid JSON ({e})")
-        return None
+        return INVALID
 
 
 def read_mcp_file(where: str, root: Path, errors: list[str]) -> dict:
-    data = read_json(where, root, ".mcp.json", errors)
+    data = load_json(where, root, ".mcp.json", errors)
     servers = data.get("mcpServers") if isinstance(data, dict) else None
-    if data is not None and not isinstance(servers, dict):
+    if data is not INVALID and not isinstance(servers, dict):
         errors.append(f"{where}: .mcp.json needs an mcpServers object")
     return servers if isinstance(servers, dict) else {}
 
@@ -230,7 +231,7 @@ def check_local_plugin(slug: str, errors: list[str]) -> None:
         errors.append(f"{where}: a plugin needs mcpServers or at least one skills/*/SKILL.md")
     for hooks_file in ("hooks.json", "hooks/hooks.json"):
         if (root / hooks_file).is_file():
-            read_json(where, root, hooks_file, errors)
+            load_json(where, root, hooks_file, errors)
     check_symlinks(where, root, errors)
 
 
