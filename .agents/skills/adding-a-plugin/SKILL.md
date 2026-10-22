@@ -19,8 +19,9 @@ this and CI runs it.
      and set `"logo": "logo.svg"` — a path relative to the plugin directory,
      as in Cursor's plugin format. Prefer this over an absolute `https` URL so
      cards never load images from a third-party host.
-   * `mcpServers` declares exactly one server, keyed by the slug: `command` +
-     `args` + `env` for stdio, or `url` (+ `headers`) for HTTP.
+   * `mcpServers` declares the plugin's servers (usually one, keyed by the
+     slug): `command` + `args` + `env` for stdio, or `url` (+ `headers`) for
+     HTTP. A plugin that only ships `skills/` omits it.
    * Never check in a credential. Anything a user supplies is a plain
      `${<NAME>}` placeholder, resolved from the credentials saved on the
      user's installation (no `MCP_` prefix). A stdio `env` value must
