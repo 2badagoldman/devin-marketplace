@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -162,6 +163,30 @@ def check_logo(where: str, slug: str, logo: object, errors: list[str]) -> None:
         errors.append(f"{where}: logo '{logo}' does not exist in the plugin directory")
 
 
+def read_json(where: str, root: Path, rel: str, errors: list[str]) -> object:
+    try:
+        return json.loads((root / rel).read_text())
+    except ValueError as e:
+        errors.append(f"{where}: {rel} is not valid JSON ({e})")
+        return None
+
+
+def read_mcp_file(where: str, root: Path, errors: list[str]) -> dict:
+    data = read_json(where, root, ".mcp.json", errors)
+    servers = data.get("mcpServers") if isinstance(data, dict) else None
+    if data is not None and not isinstance(servers, dict):
+        errors.append(f"{where}: .mcp.json needs an mcpServers object")
+    return servers if isinstance(servers, dict) else {}
+
+
+def check_symlinks(where: str, root: Path, errors: list[str]) -> None:
+    for parent, dirs, files in os.walk(root):
+        for name in dirs + files:
+            link = Path(parent) / name
+            if link.is_symlink() and not link.resolve().is_relative_to(root.resolve()):
+                errors.append(f"{where}: symlink {link.relative_to(root)} must point inside the plugin")
+
+
 def check_local_plugin(slug: str, errors: list[str]) -> None:
     where = f"plugins/{slug}"
     path = PLUGINS / slug / ".devin-plugin" / "plugin.json"
@@ -194,10 +219,19 @@ def check_local_plugin(slug: str, errors: list[str]) -> None:
     if not isinstance(servers, dict):
         errors.append(f"{where}: mcpServers must be an object")
         return
+    root = PLUGINS / slug
+    if (root / ".mcp.json").is_file():
+        if servers:
+            errors.append(f"{where}: .mcp.json is ignored when the manifest declares mcpServers inline; keep one")
+        servers = read_mcp_file(where, root, errors)
     for name, config in servers.items():
         check_server(where, name, config, errors)
-    if not servers and not any(f.is_file() for f in (PLUGINS / slug / "skills").glob("*/SKILL.md")):
+    if not servers and not any(f.is_file() for f in (root / "skills").glob("*/SKILL.md")):
         errors.append(f"{where}: a plugin needs mcpServers or at least one skills/*/SKILL.md")
+    for hooks_file in ("hooks.json", "hooks/hooks.json"):
+        if (root / hooks_file).is_file():
+            read_json(where, root, hooks_file, errors)
+    check_symlinks(where, root, errors)
 
 
 def canonical(data: dict) -> str:

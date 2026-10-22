@@ -21,7 +21,8 @@ this and CI runs it.
      cards never load images from a third-party host.
    * `mcpServers` declares the plugin's servers (usually one, keyed by the
      slug): `command` + `args` + `env` for stdio, or `url` (+ `headers`) for
-     HTTP. A plugin that only ships `skills/` omits it.
+     HTTP (or the same map in a root `.mcp.json`). A plugin that only ships
+     `skills/` omits it.
    * Never check in a credential. Anything a user supplies is a plain
      `${<NAME>}` placeholder, resolved from the credentials saved on the
      user's installation (no `MCP_` prefix). A stdio `env` value must
