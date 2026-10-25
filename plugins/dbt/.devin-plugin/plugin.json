@@ -1,9 +1,10 @@
 {
   "name": "dbt",
   "displayName": "dbt",
-  "description": "Run local dbt projects or query dbt Platform discovery, semantic, and admin data",
+  "description": "Run local dbt projects, or use dbt Platform's Discovery API, Semantic Layer, and Admin API",
   "shortDescription": "Data discovery and semantic models",
   "setup": {
+    "notice": "Supports two setup modes. For help, join #tools-dbt-mcp in the dbt Community Slack.",
     "steps": [
       "For local CLI access, choose your dbt project directory and dbt executable",
       "For dbt Platform access, provide your host and token and select the applicable account and environments"

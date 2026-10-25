@@ -1,7 +1,7 @@
 {
   "name": "perplexity",
   "displayName": "Perplexity",
-  "description": "Search live web sources and conduct deep research with Perplexity",
+  "description": "Search the web, run deep research, and reason over live sources with Perplexity",
   "shortDescription": "Web search and cited research",
   "homepage": "https://www.perplexity.ai",
   "logo": "logo.svg",

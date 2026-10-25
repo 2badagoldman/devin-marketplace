@@ -1,7 +1,7 @@
 {
   "name": "datadog",
   "displayName": "Datadog (API key)",
-  "description": "Investigate Datadog logs, metrics, traces, and incidents, and manage monitors and dashboards",
+  "description": "Investigate Datadog logs, metrics, traces, hosts, and incidents, and manage monitors and dashboards",
   "shortDescription": "Monitoring, metrics, logs and traces",
   "homepage": "https://www.datadoghq.com/",
   "logo": "logo.svg",

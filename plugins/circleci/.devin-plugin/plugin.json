@@ -1,7 +1,7 @@
 {
   "name": "circleci",
   "displayName": "CircleCI",
-  "description": "Investigate CircleCI build failures and flaky tests, inspect job results, and trigger pipelines",
+  "description": "Investigate CircleCI build failures and flaky tests, check pipeline status, trigger pipelines, and validate configs",
   "shortDescription": "CI pipelines, flaky tests and workflows",
   "homepage": "https://circleci.com",
   "logo": "logo.svg",

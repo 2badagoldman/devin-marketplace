@@ -1,7 +1,7 @@
 {
   "name": "google-maps",
   "displayName": "Google Maps",
-  "description": "Find places, geocode addresses, and calculate routes, distances, and elevation with Google Maps",
+  "description": "Search places and details, geocode and reverse-geocode addresses, and get directions, distances, and elevation with Google Maps",
   "shortDescription": "Places, routes and geocoding",
   "homepage": "https://maps.google.com",
   "logo": "logo.svg",

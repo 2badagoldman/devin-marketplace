@@ -1,7 +1,7 @@
 {
   "name": "figma-remote",
   "displayName": "Figma",
-  "description": "Read Figma files and components, manage comments and styles, and inspect library analytics",
+  "description": "Read Figma files, nodes, and images, manage comments, components, and styles, create webhooks, and inspect library analytics",
   "shortDescription": "Figma files, components and comments",
   "homepage": "https://www.figma.com",
   "logo": "logo.svg",

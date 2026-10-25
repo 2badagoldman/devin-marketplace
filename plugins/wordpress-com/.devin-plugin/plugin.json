@@ -1,7 +1,7 @@
 {
   "name": "wordpress-com",
   "displayName": "WordPress.com",
-  "description": "Manage WordPress.com posts, pages, media, plugins, and settings, and review site stats",
+  "description": "Manage WordPress.com posts, pages, media, plugins, users, and settings, view stats, and search domains",
   "shortDescription": "Sites, posts, pages and media",
   "homepage": "https://wordpress.com",
   "logo": "logo.png",

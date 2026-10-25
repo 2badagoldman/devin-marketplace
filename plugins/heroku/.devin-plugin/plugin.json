@@ -1,7 +1,7 @@
 {
   "name": "heroku",
   "displayName": "Heroku",
-  "description": "Deploy Heroku apps, manage dynos, pipelines, add-ons, and Postgres databases, and inspect logs",
+  "description": "Deploy and manage Heroku apps, dynos, pipelines, add-ons, teams, spaces, and Postgres databases, and fetch app logs",
   "shortDescription": "Apps, deployments and platform logs",
   "homepage": "https://www.heroku.com",
   "logo": "logo.svg",

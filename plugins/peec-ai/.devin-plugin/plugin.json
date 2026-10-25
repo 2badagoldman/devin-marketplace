@@ -1,7 +1,7 @@
 {
   "name": "peec-ai",
   "displayName": "Peec AI",
-  "description": "Analyze your brand's visibility across AI models with Peec AI",
+  "description": "Analyze your brand's visibility across LLMs with Peec AI",
   "shortDescription": "LLM visibility and brand mentions",
   "homepage": "https://peec.ai",
   "logo": "logo.png",

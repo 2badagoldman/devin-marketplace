@@ -1,7 +1,7 @@
 {
   "name": "redis",
   "displayName": "Redis",
-  "description": "Read and write Redis keys, manage data structures and pub/sub, and inspect server stats",
+  "description": "Read and write Redis keys, strings, hashes, lists, sets, streams, and JSON, use pub/sub, and inspect server stats",
   "shortDescription": "Redis keys, data structures and stats",
   "homepage": "https://redis.io",
   "logo": "logo.svg",

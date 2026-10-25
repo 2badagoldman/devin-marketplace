@@ -1,7 +1,7 @@
 {
   "name": "you-com-research",
   "displayName": "You.com Research",
-  "description": "Research complex topics and retrieve detailed reports with citations from You.com",
+  "description": "Run multi-step deep research with You.com and get reports with citations",
   "shortDescription": "Multi-step research with citations",
   "homepage": "https://you.com",
   "repository": "https://github.com/youdotcom-oss/agent-skills",

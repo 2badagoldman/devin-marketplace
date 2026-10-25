@@ -1,7 +1,7 @@
 {
   "name": "firecrawl",
   "displayName": "Firecrawl",
-  "description": "Map websites, scrape pages, search the web, and extract structured data with Firecrawl",
+  "description": "Map sites, scrape one or many URLs, search the web, run deep research, and extract structured data with Firecrawl",
   "shortDescription": "Website search, scraping and extraction",
   "homepage": "https://firecrawl.dev",
   "repository": "https://github.com/mendableai/firecrawl-mcp-server",

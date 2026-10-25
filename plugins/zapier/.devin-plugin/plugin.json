@@ -1,7 +1,7 @@
 {
   "name": "zapier",
   "displayName": "Zapier",
-  "description": "Send Slack messages, update Sheets, create calendar events, and run actions across apps with Zapier",
+  "description": "Trigger actions across 8,000+ apps with Zapier, like sending Slack messages, updating Sheets, and creating calendar events and tasks",
   "shortDescription": "Automate actions across connected apps",
   "homepage": "https://zapier.com",
   "logo": "logo.svg",
