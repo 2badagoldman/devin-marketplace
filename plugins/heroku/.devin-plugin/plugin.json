@@ -1,7 +1,7 @@
 {
   "name": "heroku",
   "displayName": "Heroku",
-  "description": "List, create, and manage Heroku apps, dynos, pipelines, add‑ons, teams, and spaces; enable maintenance mode and fetch app logs. Also deploy apps, trigger pipelines, validate configs, and manage Heroku Postgres databases.",
+  "description": "Deploy Heroku apps, manage dynos, pipelines, add-ons, and Postgres databases, and inspect logs",
   "shortDescription": "Apps, deployments and platform logs",
   "homepage": "https://www.heroku.com",
   "logo": "logo.svg",

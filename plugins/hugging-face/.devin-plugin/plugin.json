@@ -1,7 +1,7 @@
 {
   "name": "hugging-face",
   "displayName": "Hugging Face",
-  "description": "Hugging Face integration to access the Hub and thousands of Gradio apps",
+  "description": "Find Hugging Face models, datasets, and Gradio demos",
   "shortDescription": "Models, datasets and hosted demos",
   "homepage": "https://huggingface.co",
   "logo": "logo.svg",

@@ -1,7 +1,7 @@
 {
   "name": "browserless",
   "displayName": "Browserless",
-  "description": "Browser automation in the cloud: smart scraping, web search, crawling, Lighthouse audits, and custom Puppeteer code execution with no infrastructure required.",
+  "description": "Scrape and crawl websites, run Lighthouse audits, and execute Puppeteer code with Browserless",
   "shortDescription": "Browser actions, scraping and automation",
   "homepage": "https://www.browserless.io",
   "logo": "logo.svg",
