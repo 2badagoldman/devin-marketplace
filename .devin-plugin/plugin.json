@@ -102,7 +102,6 @@
     "./plugins/google-analytics",
     "./plugins/google-calendar",
     "./plugins/google-cloud-monitoring",
-    "./plugins/google-drive",
     "./plugins/google-maps",
     "./plugins/grafana",
     "./plugins/grafana-remote",
